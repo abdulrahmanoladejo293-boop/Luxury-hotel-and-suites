@@ -1,0 +1,113 @@
+/* Base/reset for this component */
+.section {
+  background-color: #f8f1e9; /* cream bg */
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 60px 20px;
+  color: #2e2e2e;
+}
+
+/* center inner content and constrain width so three cards fit exactly */
+.section-inner {
+  max-width: 1200px; /* adjust to match your page width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* header */
+.section-subtitle {
+  color: #a37b2c;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.section-title {
+  font-size: 2.6rem;
+  margin: 0 0 42px;
+  font-weight: 800;
+  color: #2e2e2e;
+}
+
+/* Layout: three cards on one row */
+.cards-container {
+  display: flex;
+  justify-content: space-between; /* evenly space 3 cards */
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* each card shares the width: 3 cards + 2 gaps = container width */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(33, 22, 18, 0.08);
+  padding: 28px 30px;
+  /* share the parent width equally while keeping box-sizing */
+  width: calc((100% - 2 * 30px) / 3); /* 2 gaps of 30px */
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;           /* ensures content never spills out */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 260px;         /* keeps consistent card height */
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* stars */
+.stars {
+  color: #c9a227;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+/* quote: contained and wrapped */
+.quote {
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 20px;
+  word-break: break-word;     /* break long words */
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* guest name */
+.guest {
+  margin-top: auto;           /* push name to bottom if needed */
+  font-weight: 700;
+  color: #111;
+  font-size: 0.95rem;
+}
+
+/* small screens: stack but keep readable */
+@media (max-width: 1024px) {
+  .section-inner {
+    max-width: 960px;
+  }
+  .cards-container {
+    gap: 22px;
+  }
+  .card {
+    width: calc((100% - 2 * 22px) / 3);
+    min-height: 240px;
+  }
+}
+
+/* mobile: stack vertically and remove forced one-row behavior */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    min-height: auto;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}

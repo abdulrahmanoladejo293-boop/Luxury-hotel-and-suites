@@ -1,0 +1,92 @@
+.curated {
+  background-color: #e9e3db; /* light beige background */
+  padding: 100px 60px;
+  text-align: center;
+}
+
+/* --- HEADINGS --- */
+.curated-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a38452; /* gold tone */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.curated-title {
+  font-size: 2.8rem;
+  color: #2c2c2c;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+/* --- CARD CONTAINER --- */
+.curated-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: nowrap; /* ensures they stay horizontal */
+}
+
+/* --- INDIVIDUAL CARD --- */
+.curated-card {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 330px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curated-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* --- CARD CONTENT --- */
+.curated-icon {
+  font-size: 2rem;
+  color: #a38452;
+  margin-bottom: 20px;
+}
+
+.curated-card h3 {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.curated-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .curated-cards {
+    flex-wrap: wrap; /* stack when smaller */
+  }
+}
+
+@media (max-width: 768px) {
+  .curated {
+    padding: 80px 30px;
+  }
+
+  .curated-title {
+    font-size: 2rem;
+  }
+
+  .curated-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curated-card {
+    width: 90%;
+  }
+}

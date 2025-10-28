@@ -1,0 +1,73 @@
+.hero {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  gap: 40px;
+
+  /* Match Offerings background */
+  background-color: #f3efe9;
+
+  /* Remove any leftover border or margin */
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+
+.hero-left {
+  flex: 1;
+  margin-left: 80px;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #a07e48;
+  font-size: 90px;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  color: #3a302a;
+  font-family: 'Times New Roman';
+}
+
+
+.experience{
+  color: #3a302a;
+  font-size: 100px;
+} 
+.luxury{
+  color: #3a302a;
+  font-size: 80px;
+}
+.img{
+display: flex;
+  height: 500px;
+  width: 600px;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+
+
+@media (max-width: 900px) {  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+  }
+}
