@@ -13,7 +13,7 @@ const Navbar = () => {
         <li>Gallery</li>
         <li>Contact</li>
       </ul>
-      <button className="book-btn">Book Now</button>
+      <button className="book-btn">Register</button>
     </nav>
   );
 };

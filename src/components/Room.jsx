@@ -23,7 +23,7 @@ const Room = () => {
           <li>• 24-hour room service</li>
         </ul>
 
-        <button className="room-btn">Book Your Stay</button>
+        <button className="room-btn">Book Your Stay </button>
       </div>
     </section>
   );
