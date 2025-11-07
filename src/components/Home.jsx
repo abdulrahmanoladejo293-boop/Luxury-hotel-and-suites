@@ -1,11 +1,10 @@
 import React from "react";
-import SerenitySuites from "./components/serenitysuites";
-import Section from "./components/Section";
-import GuestVoices from "./components/GuestVoices";
-import Room from "./components/Room";
-import Curated from "./components/Curated";
-import Footer from "./components/Footer";
-import Form from "./components/Form";
+import SerenitySuites from "../serenitySuites";
+import Section from "./Section";
+import GuestVoices from "./GuestVoices";
+import Room from "./Room";
+import Curated from "./Curated";
+import Footer from "./Footer";
 
 
 
@@ -18,7 +17,6 @@ function App() {
   <Room />
   <Curated />
   <Footer/>
-  <Form />
   </div>
   );
 }
