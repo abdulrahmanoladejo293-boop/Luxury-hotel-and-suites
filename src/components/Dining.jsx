@@ -1,13 +1,19 @@
 import React from "react";
 import styles from "./Dining.module.css";
+
 import Dinners from "./Dinners";
 import SecureTable from "./SecureTable";
-import Footer from "./Footer";
+import Footer from "./footer";
+
+import diningImg from "../assets/dining.jpg"; // ✅ Correct Vite import
 
 const Dining = () => {
   return (
     <>
-      <section className={styles.hero}>
+      <section
+        className={styles.hero}
+        style={{ backgroundImage: `url(${diningImg})` }} // ✅ Correct Vite usage
+      >
         <div className={styles.overlay}></div>
 
         <div className={styles.inner}>
@@ -19,15 +25,14 @@ const Dining = () => {
           </h1>
 
           <p className={styles.lead}>
-            From award-winning cuisine to bespoke cocktail experiences, indulge your
-            senses in our collection of exquisite restaurants and bars.
+            From award-winning cuisine to bespoke cocktail experiences, indulge
+            your senses in our collection of exquisite restaurants and bars.
           </p>
         </div>
       </section>
 
       <Dinners />
       <SecureTable />
-
       <Footer />
     </>
   );

@@ -3,8 +3,9 @@ import Section from "./Section";
 import GuestVoices from "./GuestVoices";
 import Room from "./Room";
 import Curated from "./Curated";
-import Footer from "./Footer";
-import HeroSection from "./HeroSection";
+import Footer from "./footer";
+import HeroSection from "./HeroSection.jsx";
+
 
 
 
