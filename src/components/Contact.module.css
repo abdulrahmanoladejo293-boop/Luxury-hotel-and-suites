@@ -1,0 +1,151 @@
+.contactPage {
+  font-family: "Poppins", sans-serif;
+  color: #3f2e25;
+}
+
+/* ===== Hero Section ===== */
+.contactHero {
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  animation: fadeInText 1.4s ease-in-out;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 80px 20px;
+  border-radius: 8px;
+}
+
+.kicker {
+  color: #d6b88b;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.lead {
+  color: #f2eae3;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== Contact Section ===== */
+.contactSection {
+  background-color: #f7f4ef;
+  padding: 80px 20px;
+}
+
+/* Centered Form Container */
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* my Form Card  */
+.formCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInText 1.4s ease-in-out;
+}
+
+.formTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  border: 1px solid #d5c8b5;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.95rem;
+  background-color: #fdfcfb;
+  resize: none;
+}
+
+.submitButton {
+  background-color: #b8945e;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #a07a4f;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional fade-in class (for scroll-triggered use) */
+.fadeIn {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInText 1.4s ease forwards;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contactHero {
+    padding: 80px 20px;
+  }
+
+  .headline {
+    font-size: 2.2rem;
+  }
+
+  .formCard {
+    padding: 25px;
+  }
+}

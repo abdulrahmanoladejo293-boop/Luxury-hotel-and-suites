@@ -1,0 +1,142 @@
+.dinnersSection {
+  background-color: #f7f5f2;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3f2e25;
+  margin-bottom: 60px;
+}
+
+/* card container layout */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* individual card */
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* header section with image and colored background */
+.cardHeader {
+  position: relative;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+.cardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
+}
+
+.cardHeader:hover .cardImage {
+  opacity: 0.4;
+}
+
+/* body text */
+.cardBody {
+  padding: 26px 20px 28px;
+  color: #3f2e25;
+}
+
+.cardSubtitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #6b584c;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* footer row */
+.cardFooter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f1e6d4;
+  color: #6b584c;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.cardButton {
+  background-color: #b8945e;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #a27c4c;
+}
+
+/* responsive adjustments */
+@media (max-width: 780px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .cardBody {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+  .cardSubtitle {
+    font-size: 1.1rem;
+  }
+}

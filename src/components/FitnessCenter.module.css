@@ -1,0 +1,133 @@
+.fitnessSection {
+  background-color: #f9f6f2;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Side (Image) ===== */
+.imageWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gymImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .gymImage {
+  transform: scale(1.05);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(63, 46, 37, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayText {
+  color: #d6b88b;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ===== Right Side (Text) ===== */
+.textContent {
+  flex: 1;
+  min-width: 320px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3f2e25;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: #b8945e;
+  border: none;
+  margin: 12px 0 20px 0;
+}
+
+.description {
+  color: #4a3b31;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  color: #3f2e25;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #b8945e;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent {
+    margin-top: 30px;
+  }
+
+  .divider {
+    margin: 10px auto;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./Footer.css";
 
 const Footer = () => {
@@ -34,7 +35,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li>Rooms & Reservations</li>
+            <li>Rooms & Reservations </li>
             <li>Fine Dining</li>
             <li>Spa & Wellness</li>
             <li>Careers</li>

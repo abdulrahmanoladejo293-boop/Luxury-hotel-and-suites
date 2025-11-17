@@ -1,0 +1,65 @@
+.secureSection {
+  background-color: #3f2e25; /* deep brown */
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #c9a87a; /* gold tone */
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #efe9e3;
+  max-width: 600px;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.input {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: none;
+  width: 220px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.button {
+  background-color: #b8945e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a8834f;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .input {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
