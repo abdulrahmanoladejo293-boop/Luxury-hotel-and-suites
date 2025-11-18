@@ -3,7 +3,7 @@ import styles from "./Dining.module.css";
 
 import Dinners from "./Dinners";
 import SecureTable from "./SecureTable";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 import diningImg from "../assets/dining.jpg"; // ✅ Correct Vite import
 
