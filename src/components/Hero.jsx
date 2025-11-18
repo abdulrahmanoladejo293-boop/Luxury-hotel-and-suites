@@ -4,7 +4,7 @@ import Button from "./Button";
 import "./HeroSection.css";
 import Suiteimage from "../images/suite.img.jpeg"
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-left">
@@ -27,4 +27,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

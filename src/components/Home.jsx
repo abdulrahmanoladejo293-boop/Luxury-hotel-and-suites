@@ -4,11 +4,11 @@ import GuestVoices from "./GuestVoices.jsx";
 import Room from "./Room.jsx";
 import Curated from "./Curated.jsx";
 import Footer from "./Footer.jsx";
-import HeroSection from "./HeroSection.jsx";
+import Hero from "./Hero.jsx";
 function App() {
   return (
   <div>
-  <HeroSection />
+  <Hero />
   <Section />
   <GuestVoices /> 
   <Room />
