@@ -1,10 +1,10 @@
 import React from "react";
-import Section from "../components/Section.jsx";
-import GuestVoices from "../components/GuestVoices.jsx";
-import Room from "../components/Room.jsx";
-import Curated from "../components/Curated.jsx";
-import Footer from "../components/Footer.jsx";
-import HeroSection from "../components/HeroSection.jsx"
+import Section from "./Section.jsx";
+import GuestVoices from "./GuestVoices.jsx";
+import Room from "./Room.jsx";
+import Curated from "./Curated.jsx";
+import Footer from "./Footer.jsx";
+import HeroSection from "./HeroSection.jsx"
 
 
 function App() {
