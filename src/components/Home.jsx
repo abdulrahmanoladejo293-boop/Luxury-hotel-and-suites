@@ -4,8 +4,7 @@ import GuestVoices from "./GuestVoices.jsx";
 import Room from "./Room.jsx";
 import Curated from "./Curated.jsx";
 import Footer from "./Footer.jsx";
-import HeroSection from "../components/HeroSection.jsx";
-
+import HeroSection from "./HeroSection.jsx";
 function App() {
   return (
   <div>
