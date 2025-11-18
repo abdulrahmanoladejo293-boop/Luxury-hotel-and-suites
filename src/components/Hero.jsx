@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Button from "./Button";
-import "./HeroSection.css";
+import "./Hero.css"
 import Suiteimage from "../images/suite.img.jpeg"
 
 const Hero = () => {
