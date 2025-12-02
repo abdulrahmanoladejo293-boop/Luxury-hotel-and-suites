@@ -54,7 +54,7 @@
   width: 100%;
 }
 
-/* my Form Card  */
+/* Form Card */
 .formCard {
   background: #fff;
   padding: 30px;
@@ -89,16 +89,27 @@
   margin-bottom: 5px;
 }
 
+/* ===== FIXED INPUT TEXT VISIBILITY ===== */
 .inputGroup input,
 .inputGroup textarea {
   border: 1px solid #d5c8b5;
   border-radius: 6px;
   padding: 10px;
   font-size: 0.95rem;
-  color: #a89a8a;
+  background-color: #fdfcfb;
   resize: none;
+
+  /* FIX: make text visible */
+  color: #3f2e25 !important;
 }
 
+/* Placeholder color */
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: #a89a8a;
+}
+
+/* Submit Button */
 .submitButton {
   background-color: #b8945e;
   border: none;
@@ -128,7 +139,6 @@
   }
 }
 
-/* Optional fade-in class (for scroll-triggered use) */
 .fadeIn {
   opacity: 0;
   transform: translateY(40px);
