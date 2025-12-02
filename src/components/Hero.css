@@ -1,22 +1,16 @@
 .hero {
- display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px 60px;
   gap: 40px;
-
-  /* Match Offerings background */
   background-color: #f3efe9;
-
-  /* Remove any leftover border or margin */
-  margin-bottom: 0;
-  border-bottom: none;
+  flex-wrap: wrap;
 }
-
 
 .hero-left {
   flex: 1;
-  margin-left: 80px;
+  min-width: 280px;
 }
 
 .hero-left h1 {
@@ -27,7 +21,7 @@
 
 .highlight {
   color: #a07e48;
-  font-size: 90px;
+  font-size: 4.5rem;
 }
 
 .hero-left p {
@@ -40,34 +34,107 @@
 .buttons {
   display: flex;
   gap: 20px;
-  color: #3a302a;
-  font-family: 'Times New Roman';
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-
-.experience{
+.experience {
   color: #3a302a;
-  font-size: 100px;
-} 
-.luxury{
-  color: #3a302a;
-  font-size: 80px;
+  font-size: 4.5rem;
 }
-.img{
-display: flex;
-  height: 500px;
-  width: 600px;
+
+.luxury {
+  color: #3a302a;
+  font-size: 3.2rem;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   border-radius: 1000px;
-  overflow: hidden;
+  object-fit: cover;
 }
 
-
-@media (max-width: 900px) {  .hero {
-    flex-direction: column;
-    text-align: center;
+/* ---------------------- */
+/* 📱 Tablets: 1024px ↓   */
+/* ---------------------- */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 40px;
   }
 
   .hero-left h1 {
+    font-size: 3.2rem;
+  }
+
+  .highlight {
+    font-size: 3.6rem;
+  }
+
+  .img img {
+    max-width: 380px;
+  }
+}
+
+/* ---------------------- */
+/* 📱 Phones: 768px ↓     */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2.6rem;
+  }
+
+  .highlight {
     font-size: 3rem;
+  }
+
+  .experience {
+    font-size: 3rem;
+  }
+
+  .luxury {
+    font-size: 2.4rem;
+  }
+
+  .img img {
+    max-width: 320px;
+  }
+}
+
+/* ---------------------- */
+/* 📱 Small phones: 480px ↓*/
+/* ---------------------- */
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .highlight {
+    font-size: 2.4rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .img img {
+    max-width: 260px;
   }
 }

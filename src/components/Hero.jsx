@@ -22,7 +22,7 @@ const Hero = () => {
           <Button type="outline" text="View Dining" to="/Dining" />
         </div>
       </div>
-      <div className="img"><img src={Suiteimage} alt="" /></div>
+      <div className="img"><img src={Suiteimage} alt="Luxury suite image" /></div>
     </section>
   );
 };

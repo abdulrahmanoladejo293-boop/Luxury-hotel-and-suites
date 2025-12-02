@@ -9,15 +9,16 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  
+  flex-wrap: wrap;
 }
 
 .logo {
   font-weight: 700;
   font-size: 2.4rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.suite{
+
+.suite {
   font-weight: 700;
   font-size: 2.4rem;
   color: #a07e48;
@@ -39,7 +40,7 @@
   font-size: 20px;
 }
 
-.nav :hover {
+.nav li:hover {
   color: #a57b32;
 }
 
@@ -58,6 +59,60 @@
   background-color: #8b6528;
   transform: translateY(-2px);
 }
-.link{
-  color:#8b6528 ;
+
+.link {
+  color: #8b6528;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .nav {
+    gap: 20px;
+  }
+
+  .logo, .suite {
+    font-size: 2rem;
+  }
+
+  .book-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo, .suite {
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav li {
+    font-size: 16px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
 }

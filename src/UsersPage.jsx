@@ -27,7 +27,7 @@ const UsersPage = () => {
       <h1>Random Users</h1>
       <ul>
         {users.map((user) => (
-          <li key={user.login.uuid}>
+          <li key={user.login.uuid}>     
             {user.name.first} {user.name.last} — {user.email}
           </li>
         ))}

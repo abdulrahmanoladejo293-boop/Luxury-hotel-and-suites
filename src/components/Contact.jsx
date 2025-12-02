@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
 
               <div className={styles.inputGroup}>
-                <label>Subject</label>
+                <label type="Text" placeholder="Required">Subject</label>
                 <input
                   type="text"
                   name="subject"
