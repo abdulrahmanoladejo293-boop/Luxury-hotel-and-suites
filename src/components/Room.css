@@ -1,142 +1,101 @@
-.hero {
+.room-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
   padding: 80px 60px;
-  gap: 40px;
-  background-color: #f3efe9;
+  background-color: #fcf7f2;
   flex-wrap: wrap;
 }
 
-.hero-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.hero-left h1 {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
-
-.highlight {
-  color: #a07e48;
-  font-size: 4.5rem;
-}
-
-.hero-left p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 30px;
-  max-width: 500px;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.experience {
-  color: #3a302a;
-  font-size: 4.5rem;
-}
-
-.luxury {
-  color: #3a302a;
-  font-size: 3.2rem;
-}
-
-
-/* 🔥 FIXED IMAGE SECTION */
-.img {
+.room-left {
   flex: 1;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-.img img {
+.room-image {
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 50%;
+  max-width: 550px;
+  height: auto;              /* 🔥 makes it responsive */
+  border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Tablets */
-@media (max-width: 1024px) {
-  .hero {
-    padding: 60px 40px;
-  }
-
-  .hero-left h1 {
-    font-size: 3.2rem;
-  }
-
-  .highlight {
-    font-size: 3.6rem;
-  }
-
-  .img img {
-    max-width: 400px;
-  }
+.room-right {
+  flex: 1;
+  color: #2e2e2e;
 }
 
-/* Phones */
+.room-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.room-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.room-features li {
+  margin-bottom: 10px;
+}
+
+.room-btn {
+  background-color: #3b2f2f;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.room-btn:hover {
+  background-color: #2a2121;
+  transform: translateY(-2px);
+}
+
+/* 📱 Tablets & Mobile */
 @media (max-width: 768px) {
-  .hero {
+  .room-section {
     flex-direction: column;
     text-align: center;
     padding: 50px 30px;
   }
 
-  .buttons {
-    justify-content: center;
+  .room-image {
+    max-width: 90%;     /* 🔥 fits phones and tablets */
   }
 
-  .hero-left h1 {
-    font-size: 2.6rem;
-  }
-
-  .highlight {
-    font-size: 3rem;
-  }
-
-  .experience {
-    font-size: 3rem;
-  }
-
-  .luxury {
-    font-size: 2.4rem;
-  }
-
-  .img {
+  .room-right {
     margin-top: 30px;
-  }
-
-  .img img {
-    max-width: 300px;
   }
 }
 
-/* Small phones */
+/* 📱 Small Phones */
 @media (max-width: 480px) {
-  .hero-left h1 {
-    font-size: 2.2rem;
+  .room-title {
+    font-size: 1.6rem;
   }
 
-  .highlight {
-    font-size: 2.4rem;
+  .room-text {
+    font-size: 0.95rem;
   }
 
-  .hero-left p {
-    font-size: 1rem;
-  }
-
-  .img img {
-    max-width: 220px;
-    border-radius: 50%;
+  .room-image {
+    max-width: 100%;
+    border-radius: 15px;
   }
 }
