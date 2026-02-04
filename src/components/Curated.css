@@ -47,10 +47,11 @@
 
 /* --- CARD CONTENT --- */
 .curated-icon {
-  font-size: 2rem;
-  color: #a38452;
-  margin-bottom: 20px;
+  font-size: 40px;
+  color: #c89b3c; /* gold-ish luxury vibe */
+  margin-bottom: 12px;
 }
+
 
 .curated-card h3 {
   font-size: 1.2rem;

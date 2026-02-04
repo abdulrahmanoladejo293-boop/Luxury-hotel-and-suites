@@ -1,5 +1,7 @@
 import React from "react";
 import "./Curated.css";
+import { FaUtensils, FaSpa, FaMapMarkedAlt } from "react-icons/fa";
+
 
 const Curated = () => {
   return (
@@ -10,19 +12,19 @@ const Curated = () => {
       <div className="curated-cards">
         {[
           {
-            icon: "🍽️",
+            icon: <FaUtensils />,
             title: "Michelin Dining",
             description:
               "Savor world-class cuisine crafted by celebrity chefs in our panoramic rooftop restaurant.",
           },
           {
-            icon: "💆‍♀️",
+            icon: <FaSpa />,
             title: "Holistic Spa",
             description:
               "Rejuvenate with bespoke treatments, thermal baths, and an infinity pool overlooking the city.",
           },
           {
-            icon: "👜",
+            icon: <FaMapMarkedAlt />,
             title: "Exclusive Tours",
             description:
               "Discover hidden gems with our concierge-planned private city tours and guided experiences.",

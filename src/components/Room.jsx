@@ -20,6 +20,7 @@ const Room = () => {
           <li>• King-size bed with premium linens</li>
           <li>• Free high-speed Wi-Fi</li>
           <li>• Private balcony with city or garden view</li>
+          <li>. personal privacy with some tour around the garden</li>
           <li>• 24-hour room service</li>
         </ul>
 
