@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -35,11 +35,24 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li>Rooms & Reservations </li>
-            <li>Fine Dining</li>
-            <li>Spa & Wellness</li>
-            <li>Careers</li>
-            <li>Privacy Policy</li>
+            <li>
+            <Link to="/">Home</Link>
+            </li>
+            <li>
+            <Link to="/cards">Rooms & Reservations</Link>
+            </li>
+            <li>
+            <Link to="/dining">Fine Dining</Link>
+            </li>
+            <li>
+               <Link to="/wellness">Spa & Wellness</Link>
+            </li>
+            <li>
+                <Link to="/contact">Contact Us</Link>
+            </li>
+            <li>
+                <Link to="/form">Register</Link>
+            </li>
           </ul>
         </div>
 
